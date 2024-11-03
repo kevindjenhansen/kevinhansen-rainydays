@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>RainyDays</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the cart page for the clothing brand RainyDays">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head> 
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" aria-label="Homepage">
+                <img src="../assets/images/RainyDays_Logo.png" alt="RainyDays Logo" class="nav-logo">
+            </a>
+            <nav aria-label="Main navigation" class="nav-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                    <li><a href="../html/cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" id="menuToggle" class="menu-toggle">
+            <label for="menuToggle" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                    <li><a href="../html/cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>       
+
+    <main class="checkout-container">
+        <div class="form-container">
+            <h1>Checkout</h1>
+            <h2>Shipping Address</h2> 
+            <form class="shipping-form" action="../html/confirmation.html" method="GET">
+                <div class="name-container">
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" placeholder="First name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+    
+                <label for="street-address">Street Address:</label>
+                <input type="text" id="street-address" placeholder="Street address" required>
+    
+                <div class="country-postal-container">
+                    <div>
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" placeholder="Country" required>
+                    </div>
+                    <div>
+                        <label for="postal-code">Postal Code:</label>
+                        <input type="text" id="postal-code" placeholder="Postal/ZIP" required>
+                    </div>
+                </div>
+    
+                <label for="city">Town/City:</label>
+                <input type="text" id="city" placeholder="Town/City" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Phone" required>
+    
+                <h2>Express Checkout</h2>
+                <div class="payment-buttons">
+                    <button type="button" class="payment-button">Vipps</button>
+                    <button type="button" class="payment-button">PayPal</button>
+                </div>
+    
+                <button type="submit" class="confirm-order-button">Confirm Order</button>
+            </form>
+        </div>
+        <div class="summary-container">
+            <h2>Order Summary</h2>
+            <div class="product-summary">
+                <img src="../assets/images/RainyDays_Jacket1.jpg" alt="Rain Jacket with Glider" class="product-image">
+                <span class="product-name">RAIN JACKET WITH GLIDER</span>
+            </div>
+            <div class="discount-code-container">
+                <label for="discount-code-summary">Enter Discount Code:</label>
+                <input type="text" id="discount-code-summary" placeholder="Enter discount code">
+            </div>
+            <div class="totals">
+                <p>Subtotal: <span class="subtotal">kr 599,00</span></p>
+                <p>Shipping: <span class="shipping">Enter Shipping Address</span></p>
+                <p>Total: <span class="total">kr 599,00</span></p>
+            </div>            
+        </div>
+    </main>    
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footernav-1">
+                <h1>Follow Us</h1>
+                <p>Stay connected with RainyDays! Follow us on social media for the latest updates, 
+                outdoor tips, and exclusive deals on your favorite rain jackets.</p>
+                <div class="footer-icons">
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter social-icon"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook social-icon"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram social-icon"></i></a>
+                </div>
+            </nav>
+            
+            <nav class="footernav-2">
+                <h1>Quick Contact</h1>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i> RainyDays Store<br>
+                    <span>Skogveien 12<br></span>
+                    <span>0456 Oslo, Norway</span>
+                </address>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Rainydays@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +47 55 23 89 12</li>
+                </ul>
+            </nav>
+            <div class="footer-copyright">
+                <a href="../index.html" aria-label="Homepage Icon"><img src="../assets/images/RainyDays_Logo.png" alt="RainyDays Logo" class="footer-logo"></a>
+                <p class="footer-copyright">Copyright &copy; 2024</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

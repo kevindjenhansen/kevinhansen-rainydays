@@ -1,5 +1,5 @@
-@import url("./reset.css");
-@import url("./variables.css");
+@import url("../reset.css");
+@import url("../variables.css");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -87,7 +87,7 @@ header {
 
 main {
   color: var(--color-primary);
-  background: url(/assets/images/mainbackground.jpg) center/cover no-repeat;
+  background: url(../assets/images/mainbackground.jpg) center/cover no-repeat;
   position: relative;
   z-index: 0;
 }
